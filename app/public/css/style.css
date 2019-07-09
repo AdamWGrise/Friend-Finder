@@ -1,0 +1,21 @@
+body {
+    background: #224444;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.jumbotron {
+    background: #559999;
+    color:#ddd;
+}
+
+.card-header {
+    background: #aaa;
+}
+
+.card-body {
+    background: #ccc;
+}
+
+.card {
+    border:none;
+}
