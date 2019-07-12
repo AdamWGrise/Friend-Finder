@@ -6,6 +6,9 @@ body {
 .jumbotron {
     background: #559999;
     color:#ddd;
+    height:220px;
+    padding-top: 20px;
+    margin-top:15px;
 }
 
 .card-header {
@@ -18,4 +21,5 @@ body {
 
 .card {
     border:none;
+    margin-bottom:15px;
 }

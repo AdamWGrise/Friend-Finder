@@ -1,5 +1,6 @@
 var path = require("path");
 var friends = require('../data/friends');
+var Calculate = require("../calculate");
 
 module.exports = function (app) {
 
@@ -24,8 +25,6 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
         var newFriend = req.body;
         newFriend.routeName = newFriend.name.replace(/\s+/g, "-").toLowerCase(); // Replace spaces with dashes for the routeName
-        friends.push(newFriend);
-        res.json(newFriend);
+        res.json(Calculate(newFriend));
     });
-
 };

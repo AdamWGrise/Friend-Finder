@@ -15,122 +15,130 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Friend Finder Express</h1>
-            <h3>The most rudimentary and inelegant match-making system in existence!</h3>
+            <h3>Answer some questions and get matched up with a complete stranger here.</h3>
             <hr>
-            <a href="api/friends"><button class="btn btn-dark btn-lg"><span class="fa fa-book"></span> View Person List</button></a>
             <a href="/"><button class="btn btn-dark btn-lg"><span class="fa fa-home"></span> Home Page</button></a>
+            <a href="api/friends"><button class="btn btn-dark btn-lg"><span class="fa fa-book"></span> View Person
+                    List</button></a>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
                         <h3><strong>Friend Finder Survey</strong></h3>
-                        <h6>(*) = required</h6>
                     </div>
                     <div class="card-body">
-                        <h6>Name (*)</h6>
-                        <input type="text" name="" id="name" class="form-control" required>
-                        <br>
-                        <h6>Put a link to an image of you here (*)</h6>
-                        <input type="text" name="" id="photo" class="form-control" required>
-                        <hr>
-                        <h6>The TV show "Firefly" ended too soon.</h6>
-                        <select data-placeholder="" id="q1">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>The band U2 is overrated.</h6>
-                        <select data-placeholder="" id="q2">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>"Yeah, I like money, though."</h6>
-                        <select data-placeholder="" id="q3">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>Cats make better pets than dogs.</h6>
-                        <select data-placeholder="" id="q4">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>Cats are superior creatures to dogs.</h6>
-                        <select data-placeholder="" id="q5">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>Religion is a good thing for the world.</h6>
-                        <select data-placeholder="" id="q6">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>The republican party has done more for the United States than the democratic party in the
-                            last
-                            two decades.</h6>
-                        <select data-placeholder="" id="q7">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>I like being challenged.</h6>
-                        <select data-placeholder="" id="q8">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>Who I spend time with is more important than where we are.</h6>
-                        <select data-placeholder="" id="q9">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select><br>
-                        <h6>Nintendo is better than Sony and Microsoft.</h6>
-                        <select data-placeholder="" id="q10">
-                            <option value=""></option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Slightly Disagree)</option>
-                            <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
-                            <option value="4">4 (Slightly Agree)</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                        <br>
-                        <br>
-                        <button type="submit" class="btn btn-dark btn-lg" id="submit-button"><i
-                                class="fa fa-check"></i> Submit Answers!
-                        </button>
+                        <div id="survey-questions">
+                            <h6>(*) = required</h6>
+                            <h6>Name (*)</h6>
+                            <input type="text" name="" id="name" class="form-control" required>
+                            <br>
+                            <h6>Put a link to an image of you here (*)</h6>
+                            <input type="text" name="" id="photo" class="form-control" required>
+                            <hr>
+                            <h6>The TV show "Firefly" ended too soon. The movie didn't do the show justice.</h6>
+                            <select data-placeholder="" id="q1">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>The band U2 is overrated. Like, for realsies.</h6>
+                            <select data-placeholder="" id="q2">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>"Yeah, I like money, though."</h6>
+                            <select data-placeholder="" id="q3">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>Cats make better pets than dogs.</h6>
+                            <select data-placeholder="" id="q4">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>Cats are superior creatures to dogs. Definitely a different question.</h6>
+                            <select data-placeholder="" id="q5">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>Religion is a good thing for the world.</h6>
+                            <select data-placeholder="" id="q6">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>The republican party has done more for the United States than the democratic party in the last
+                                two decades. These couple questions turned political real quick, didn't they?</h6>
+                            <select data-placeholder="" id="q7">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>I like being challenged. A staple personality test question.</h6>
+                            <select data-placeholder="" id="q8">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>Who I spend time with is more important than where we are.</h6>
+                            <select data-placeholder="" id="q9">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select><br>
+                            <h6>Nintendo is better than Sony and Microsoft. Put together. (Hint: 5 is correct.)</h6>
+                            <select data-placeholder="" id="q10">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2 (Slightly Disagree)</option>
+                                <option value="3">3 (Neither Agree nor Disagree / Neutral)</option>
+                                <option value="4">4 (Slightly Agree)</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-dark btn-lg" id="submit-button"><i
+                                    class="fa fa-check"></i> Submit Answers!
+                            </button>
+                        </div>
+                        <div id="result">
+                            <h4>Your best match is...</h4>
+                            <h3 id="res-name"></h3>
+                            <div id="res-photo"></div><br>
+                            <button type="submit" class="btn btn-dark btn-lg" id="return-button"><i class="fa fa-repeat"></i> Go back to questions</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,6 +146,16 @@
     </div>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('#result').hide();
+        });
+
+        $("#return-button").on("click", function () {
+            $('#result').hide();
+            $('#survey-questions').show();
+            $('')
+        })
+
         $("#submit-button").on("click", function () {
             var newFriend = {
                 name: $("#name").val().trim(),
@@ -148,8 +166,17 @@
 
             $.post("/api/friends", newFriend)
                 .then(function (data) {
-                    console.log("survey.html", data);
-                    alert("Your profile has been added!");
+                    $("#survey-questions").hide();
+                    $("#res-name").text(data.name + "!");
+                    var resPhoto = $('<img>');
+                    resPhoto.attr({
+                        'src': data.photo,
+                        'title': data.name,
+                        'data-caption': data.name,
+                        'width': '75%',
+                    });
+                    $("#res-photo").html(resPhoto);
+                    $("#result").show();
                 });
         });
     </script>
