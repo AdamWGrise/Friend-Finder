@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -29,12 +33,15 @@
                     </div>
                     <div class="card-body">
                         <div id="survey-questions">
-                            <h6>(*) = required</h6>
-                            <h6>Name (*)</h6>
+                            <h6>Name (required)</h6>
                             <input type="text" name="" id="name" class="form-control" required>
                             <br>
-                            <h6>Put a link to an image of you here (*)</h6>
+                            <h6>Put a link to an image of you here (required)</h6>
                             <input type="text" name="" id="photo" class="form-control" required>
+                            <div class="warning" id="namePhotoWarning">
+                                <br>
+                                <h6>Make sure to fill in both of the above fields.</h6>
+                            </div>
                             <hr>
                             <h6>The TV show "Firefly" ended too soon. The movie didn't do the show justice.</h6>
                             <select data-placeholder="" id="q1">
@@ -90,7 +97,8 @@
                                 <option value="4">4 (Slightly Agree)</option>
                                 <option value="5">5 (Strongly Agree)</option>
                             </select><br>
-                            <h6>The republican party has done more for the United States than the democratic party in the last
+                            <h6>The republican party has done more for the United States than the democratic party in
+                                the last
                                 two decades. These couple questions turned political real quick, didn't they?</h6>
                             <select data-placeholder="" id="q7">
                                 <option value=""></option>
@@ -129,57 +137,29 @@
                             </select>
                             <br>
                             <br>
-                            <button type="submit" class="btn btn-dark btn-lg" id="submit-button"><i
-                                    class="fa fa-check"></i> Submit Answers!
-                            </button>
                         </div>
-                        <div id="result">
-                            <h4>Your best match is...</h4>
+
+                        <div>
+                            <a href="#friendModal" rel="modal:open"> <button type="submit" class="btn btn-dark btn-lg"
+                                    id="submit-button"><i class="fa fa-check"></i> Submit Answers!
+                                </button></a>
+                        </div>
+
+                        <div id="friendModal" class="modal">
+                            <h4 id="modalText"></h4>
                             <h3 id="res-name"></h3>
                             <div id="res-photo"></div><br>
-                            <button type="submit" class="btn btn-dark btn-lg" id="return-button"><i class="fa fa-repeat"></i> Go back to questions</button>
+                            <p class="warning" id="incomplete-warning"></p>
+                            <a href="#" rel="modal:close">Close</a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#result').hide();
-        });
-
-        $("#return-button").on("click", function () {
-            $('#result').hide();
-            $('#survey-questions').show();
-            $('')
-        })
-
-        $("#submit-button").on("click", function () {
-            var newFriend = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $(
-                    "#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
-            };
-
-            $.post("/api/friends", newFriend)
-                .then(function (data) {
-                    $("#survey-questions").hide();
-                    $("#res-name").text(data.name + "!");
-                    var resPhoto = $('<img>');
-                    resPhoto.attr({
-                        'src': data.photo,
-                        'title': data.name,
-                        'data-caption': data.name,
-                        'width': '75%',
-                    });
-                    $("#res-photo").html(resPhoto);
-                    $("#result").show();
-                });
-        });
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 

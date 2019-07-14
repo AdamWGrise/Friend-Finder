@@ -1,4 +1,4 @@
-// Friends array to store friend data
+// Friends array to store permanent friend data. This is all that remains after server resets since there is not a database.
 
 var friends = [{
         name: "Jacob Nelson",

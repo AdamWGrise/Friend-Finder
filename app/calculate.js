@@ -14,6 +14,9 @@ var Calculate = function (newFriend) {
         var d8 = Math.abs(newFriend.scores[8] - friends[i].scores[8]);
         var d9 = Math.abs(newFriend.scores[9] - friends[i].scores[9]);
         var scoreDiff = d0 + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9;
+        if (newFriend.routeName === friends[i].routeName) {
+            newFriend.routeName = newFriend.routeName + (friends.length+1);
+        }
         differences.push(scoreDiff);
     }
     var matchValue = Math.min.apply(Math, differences);
