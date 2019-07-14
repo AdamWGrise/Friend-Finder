@@ -1,5 +1,7 @@
 var path = require("path");
 
+// Just the two HTML pages and their associated routing.
+
 module.exports = function (app) {
 
     // HTML Routing

@@ -1,7 +1,7 @@
 {
     "name": "friend-finder",
     "version": "1.0.0",
-    "description": "",
+    "description": "Matches you up with a friend!",
     "main": "server.js",
     "dependencies": {
         "express": "^4.16.3",
@@ -13,6 +13,6 @@
         "start": "node server.js",
         "watch": "nodemon server.js"
     },
-    "author": "",
+    "author": "Adam Grise",
     "license": "ISC"
 }
