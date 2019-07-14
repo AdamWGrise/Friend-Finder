@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>FF Express</title>
+
+    <!-- Bootstrap CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- jQuery Modal -->
+    <!-- Bootstrap FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- jQuery Modal, JS and CSS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 </head>
 
 <body>
@@ -139,12 +148,14 @@
                             <br>
                         </div>
 
+                        <!-- jQueryModal is used here to leverage the Submission button as a trigger to show the window. -->
                         <div>
                             <a href="#friendModal" rel="modal:open"> <button type="submit" class="btn btn-dark btn-lg"
                                     id="submit-button"><i class="fa fa-check"></i> Submit Answers!
                                 </button></a>
                         </div>
 
+                        <!-- Several unique IDs here to populate the modal window with results in script.js, including a warning if the Name or Photo fields weren't filled in. -->
                         <div id="friendModal" class="modal">
                             <h4 id="modalText"></h4>
                             <h3 id="res-name"></h3>
@@ -159,6 +170,7 @@
         </div>
     </div>
 
+    <!-- Local JS -->
     <script src="js/script.js"></script>
 
 </body>
